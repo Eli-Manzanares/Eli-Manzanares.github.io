@@ -1,1 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eli Manzanares | Finance & Information Systems</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #f5f7fa;
+        }
+
+        nav {
+            background-color: #111827;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #111827, #1e3a8a);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #dbeafe;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section {
+            padding: 70px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #111827;
+        }
+
+        .about {
+            background-color: white;
+        }
+
+        .about p {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+            color: #4b5563;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            font-weight: bold;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .project-card p {
+            color: #4b5563;
+        }
+
+        .resume {
+            background-color: white;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: #1e3a8a;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background-color: #172554;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: #1e3a8a;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Eli Manzanares</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero">
+        <h1>Eli Manzanares</h1>
+        <h2>Finance Student | Information Systems & Data Analytics</h2>
+        <p>University of Utah</p>
+    </header>
+
+    <!-- About Me -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+
+            <p>
+                I am a Finance student at the University of Utah with an interest in
+                financial analysis, information systems, and using technology to solve
+                business problems. I am particularly interested in financial data
+                analysis and how organizations can use data to make better decisions.
+                I am also interested in artificial intelligence and how tools such as
+                generative AI can improve business processes, research, and analytical
+                work. Through my coursework, I am developing technical skills in
+                Microsoft Excel, data analysis, GitHub, and web development while
+                learning how information systems support business decision-making.
+                My goal is to continue developing a combination of financial,
+                analytical, and technical skills that I can apply to real-world
+                business challenges.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+
+            <div class="skills">
+                <div class="skill">Microsoft Excel</div>
+                <div class="skill">Financial Analysis</div>
+                <div class="skill">Data Analysis</div>
+                <div class="skill">Information Systems</div>
+                <div class="skill">AI Prompt Engineering</div>
+                <div class="skill">GitHub</div>
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">Business Analytics</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="projects">
+
+                <div class="project-card">
+                    <h3>AI Business Analysis</h3>
+                    <p>
+                        An analysis project using generative AI to evaluate business
+                        information and support data-driven decision making.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Financial Data Analysis</h3>
+                    <p>
+                        A project focused on analyzing financial data using Excel and
+                        other analytical tools to identify trends and insights.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Data Visualization</h3>
+                    <p>
+                        A future project demonstrating how data visualization can
+                        communicate business and financial information effectively.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>KPMG Group Project</h3>
+                    <p>
+                        A collaborative information systems project applying technology,
+                        analytics, and business concepts to a real-world problem.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2>Resume</h2>
+
+            <p>
+                My professional resume will be available here soon.
+            </p>
+
+            <a href="#" class="button">Resume Coming Soon</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+
+            <p>
+                <strong>University of Utah Email:</strong>
+                YourEmail@utah.edu
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/Eli-Manzanares" target="_blank">
+                    github.com/Eli-Manzanares
+                </a>
+            </p>
+
+            <p>
+                <strong>LinkedIn:</strong>
+                Coming soon
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Eli Manzanares | Finance & Information Systems</p>
+    </footer>
+
+</body>
+</html>
